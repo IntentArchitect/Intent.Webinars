@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="3437abb4-6981-440b-98cb-c1efa35c4ceb">
+  <sourceEnd id="5ecc1bd4-5abe-467d-9375-58de0778d62c" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>0</order>
+    <typeReference id="f7ff289c-ee3d-465a-b965-77dd3ab7878c">
+      <typeId>d79570f5-f646-4582-b4aa-d48db523a703</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>8b1dab5f-4054-4821-931d-44790cf48484</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="3437abb4-6981-440b-98cb-c1efa35c4ceb" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderLines</name>
+    <display>OrderLines: OrderLine[*]   [1 --&gt; *]</display>
+    <order>4</order>
+    <typeReference id="725862a7-7028-444f-872f-abb843c41ea2">
+      <typeId>1876566e-eae0-48c1-8ed7-6765d14da6eb</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>8b1dab5f-4054-4821-931d-44790cf48484</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

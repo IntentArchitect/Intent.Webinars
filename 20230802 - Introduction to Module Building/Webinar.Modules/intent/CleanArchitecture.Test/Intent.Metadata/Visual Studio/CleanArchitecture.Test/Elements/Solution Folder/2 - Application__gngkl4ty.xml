@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="744e1fd4-64d0-4cef-a3b1-fef82c840aa1" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>2 - Application</name>
+  <display>2 - Application</display>
+  <externalReference>b44dfcb9-e9e9-43a2-855e-abf9c45a0359</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2f003d20-ac87-4840-bec4-74345f5f8312</parentFolderId>
+  <packageId>2f003d20-ac87-4840-bec4-74345f5f8312</packageId>
+  <packageName>CleanArchitecture.Test</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

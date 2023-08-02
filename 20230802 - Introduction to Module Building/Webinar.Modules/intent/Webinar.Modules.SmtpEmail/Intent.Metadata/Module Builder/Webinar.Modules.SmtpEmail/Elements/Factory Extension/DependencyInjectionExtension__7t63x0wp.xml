@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="797f0b71-42dc-48bd-bf18-992178b2df02" type="Factory Extension" typeId="7d008e84-bb28-4b10-ba28-7439202fca76">
+  <name>DependencyInjectionExtension</name>
+  <display>DependencyInjectionExtension</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5854b5a6-6f55-4787-bd6e-ef9fbd505022</parentFolderId>
+  <packageId>5854b5a6-6f55-4787-bd6e-ef9fbd505022</packageId>
+  <packageName>Webinar.Modules.SmtpEmail</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="40dbc590-8d29-470b-9397-f0f6f1dbb735" type="Factory Extension" typeId="7d008e84-bb28-4b10-ba28-7439202fca76">
+  <name>EntitiesAuditExtension</name>
+  <display>EntitiesAuditExtension</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0659892b-90cb-4d55-a9af-fc2cc81924d1</parentFolderId>
+  <packageId>0659892b-90cb-4d55-a9af-fc2cc81924d1</packageId>
+  <packageName>Webinar.Modules.Entities.BasicAuditing</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

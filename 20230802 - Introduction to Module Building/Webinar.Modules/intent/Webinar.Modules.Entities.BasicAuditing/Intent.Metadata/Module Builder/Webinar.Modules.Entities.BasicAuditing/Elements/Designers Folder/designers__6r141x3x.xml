@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="872b9161-58c8-4b29-99b4-c8f2b8ab9b33" type="Designers Folder" typeId="dbb71aa5-0db2-4a2a-97a9-501950f36f99">
+  <name>designers</name>
+  <display>designers</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0659892b-90cb-4d55-a9af-fc2cc81924d1</parentFolderId>
+  <packageId>0659892b-90cb-4d55-a9af-fc2cc81924d1</packageId>
+  <packageName>Webinar.Modules.Entities.BasicAuditing</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

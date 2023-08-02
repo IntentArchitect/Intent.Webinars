@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="e18069c9-6614-4379-a87b-0b5e41a4d9bc">
+  <sourceEnd id="59ff1049-b309-4d69-8f46-2d93fd6b046d" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>0</order>
+    <typeReference id="2c8b1a9c-8cc7-41d4-9fb7-012943c01279">
+      <typeId>abdd1e6e-c869-4cdf-9db5-711c0a6955b6</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>CleanArchitecture.Test.Domain</typePackageName>
+      <typePackageId>8e3533b8-4259-4afd-8432-07864c4ea159</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="e18069c9-6614-4379-a87b-0b5e41a4d9bc" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderLines</name>
+    <display>OrderLines: OrderLine[*]   [1 --&gt; *]</display>
+    <order>8</order>
+    <typeReference id="375ea9ed-753e-45a2-be0e-dca78005af01">
+      <typeId>c86f0137-424e-4087-8a5f-a351c0c05b74</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>CleanArchitecture.Test.Domain</typePackageName>
+      <typePackageId>8e3533b8-4259-4afd-8432-07864c4ea159</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>
