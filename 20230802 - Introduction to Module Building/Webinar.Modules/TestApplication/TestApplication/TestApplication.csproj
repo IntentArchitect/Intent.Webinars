@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0.0" />
   </ItemGroup>
 
 </Project>

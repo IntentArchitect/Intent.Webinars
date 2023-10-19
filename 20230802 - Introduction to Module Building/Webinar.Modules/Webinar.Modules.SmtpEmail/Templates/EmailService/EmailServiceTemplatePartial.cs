@@ -5,6 +5,7 @@ using Intent.Modules.Common;
 using Intent.Modules.Common.CSharp.Builder;
 using Intent.Modules.Common.CSharp.Templates;
 using Intent.Modules.Common.Templates;
+using Intent.Modules.Common.VisualStudio;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 
@@ -21,6 +22,7 @@ namespace Webinar.Modules.SmtpEmail.Templates.EmailService
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public EmailServiceTemplate(IOutputTarget outputTarget, object model = null) : base(TemplateId, outputTarget, model)
         {
+            AddNugetDependency(new NugetPackageInfo("Microsoft.Extensions.Options", "7.0.0.0"));
             CSharpFile = new CSharpFile(this.GetNamespace(), this.GetFolderPath())
                 .AddUsing("System.Net")
                 .AddUsing("System.Net.Mail")
