@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2fec6f85-49d0-403f-9b74-2f2714f48723" type="Enum" typeId="85fba0e9-9161-4c85-a603-a229ef312beb">
+  <name>OrderStatus</name>
+  <display>OrderStatus</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</parentFolderId>
+  <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+  <packageName>Webinar.Demo.Ordering.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="67ff6fa3-24e8-49f9-bcfe-11ece89ed0ab" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>AwaitingConfirmation</name>
+      <display>AwaitingConfirmation = 1</display>
+      <isAbstract>false</isAbstract>
+      <value>1</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2fec6f85-49d0-403f-9b74-2f2714f48723</parentFolderId>
+      <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+      <packageName>Webinar.Demo.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="51efc129-44db-4f56-bd63-c14ea821f320" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Paid</name>
+      <display>Paid = 2</display>
+      <isAbstract>false</isAbstract>
+      <value>2</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2fec6f85-49d0-403f-9b74-2f2714f48723</parentFolderId>
+      <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+      <packageName>Webinar.Demo.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a38d76b2-faab-4efd-b19b-d80397554027" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Shipped</name>
+      <display>Shipped = 3</display>
+      <isAbstract>false</isAbstract>
+      <value>3</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2fec6f85-49d0-403f-9b74-2f2714f48723</parentFolderId>
+      <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+      <packageName>Webinar.Demo.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="53623c94-afab-4a68-9b3b-11487f24716f" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Cancelled</name>
+      <display>Cancelled = 4</display>
+      <isAbstract>false</isAbstract>
+      <value>4</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2fec6f85-49d0-403f-9b74-2f2714f48723</parentFolderId>
+      <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+      <packageName>Webinar.Demo.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

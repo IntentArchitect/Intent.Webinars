@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="26a936b6-a10d-4aae-b4ae-5f56e8865837">
+  <sourceEnd id="29a0e0bb-732e-4e5f-93d4-7c52e1f27f81" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
+    <name>Webinar.Demo.Ordering</name>
+    <display>publisher: Webinar.Demo.Ordering</display>
+    <order>0</order>
+    <typeReference id="38c92821-52ae-4bad-8580-ae735f870318">
+      <typeId>9e750045-6b86-4bd1-ab92-5cdad10bb854</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing</typePackageName>
+      <typePackageId>4fb13e32-ef0f-4708-821b-961eee9521b4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="26a936b6-a10d-4aae-b4ae-5f56e8865837" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
+    <name>OrderShippedEvent</name>
+    <display>publish: OrderShippedEvent</display>
+    <order>3</order>
+    <typeReference id="314f552f-f907-4c6b-8ded-738df37a6200">
+      <typeId>fc908bea-65a3-4c93-83e2-82b2e90d5c7c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Publish Assocation</associationType>
+  <associationTypeId>022d4c90-e1b6-4747-a15f-640c19503a8f</associationTypeId>
+  <stereotypes />
+</association>

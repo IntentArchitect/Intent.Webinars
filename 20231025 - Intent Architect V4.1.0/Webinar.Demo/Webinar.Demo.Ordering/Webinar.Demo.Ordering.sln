@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{9EB18F2D-3ED2-4F91-AF11-69FF56798099}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "Webinar.Demo.Ordering.Api", "Webinar.Demo.Ordering.Api\Webinar.Demo.Ordering.Api.csproj", "{B972EBF5-FB18-4DF3-A3F6-6F775B27A690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DFE416C5-D265-4260-B63D-A0380A153F91}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Webinar.Demo.Ordering.Application", "Webinar.Demo.Ordering.Application\Webinar.Demo.Ordering.Application.csproj", "{2DCEBBD2-B269-4D45-85F3-859510276977}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{72BFECB3-164C-41C8-B7C4-861403C298E3}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Webinar.Demo.Ordering.Domain", "Webinar.Demo.Ordering.Domain\Webinar.Demo.Ordering.Domain.csproj", "{DAF8CF52-0E6B-448C-8E44-3D114F21C78B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{3164D91F-0A01-4559-84F7-9FE41469C51F}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Webinar.Demo.Ordering.Infrastructure", "Webinar.Demo.Ordering.Infrastructure\Webinar.Demo.Ordering.Infrastructure.csproj", "{EAD1ED24-C222-4711-8716-0693A22D0A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B972EBF5-FB18-4DF3-A3F6-6F775B27A690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B972EBF5-FB18-4DF3-A3F6-6F775B27A690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B972EBF5-FB18-4DF3-A3F6-6F775B27A690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B972EBF5-FB18-4DF3-A3F6-6F775B27A690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCEBBD2-B269-4D45-85F3-859510276977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCEBBD2-B269-4D45-85F3-859510276977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCEBBD2-B269-4D45-85F3-859510276977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCEBBD2-B269-4D45-85F3-859510276977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF8CF52-0E6B-448C-8E44-3D114F21C78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF8CF52-0E6B-448C-8E44-3D114F21C78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF8CF52-0E6B-448C-8E44-3D114F21C78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF8CF52-0E6B-448C-8E44-3D114F21C78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD1ED24-C222-4711-8716-0693A22D0A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD1ED24-C222-4711-8716-0693A22D0A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD1ED24-C222-4711-8716-0693A22D0A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD1ED24-C222-4711-8716-0693A22D0A91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B972EBF5-FB18-4DF3-A3F6-6F775B27A690} = {9EB18F2D-3ED2-4F91-AF11-69FF56798099}
+		{2DCEBBD2-B269-4D45-85F3-859510276977} = {DFE416C5-D265-4260-B63D-A0380A153F91}
+		{DAF8CF52-0E6B-448C-8E44-3D114F21C78B} = {72BFECB3-164C-41C8-B7C4-861403C298E3}
+		{EAD1ED24-C222-4711-8716-0693A22D0A91} = {3164D91F-0A01-4559-84F7-9FE41469C51F}
+	EndGlobalSection
+EndGlobal

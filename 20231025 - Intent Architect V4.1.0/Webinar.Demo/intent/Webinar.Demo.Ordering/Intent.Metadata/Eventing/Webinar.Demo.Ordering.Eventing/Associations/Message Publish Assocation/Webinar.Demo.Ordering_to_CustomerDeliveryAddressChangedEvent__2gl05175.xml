@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="006cbe23-0388-43a6-9feb-1fbd1a0baf13">
+  <sourceEnd id="3e235091-234d-4570-9fd9-83e8ed28fbbf" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
+    <name>Webinar.Demo.Ordering</name>
+    <display>publisher: Webinar.Demo.Ordering</display>
+    <order>0</order>
+    <typeReference id="2c4f6a07-c1c3-4338-bc41-6b51c67f56f4">
+      <typeId>9e750045-6b86-4bd1-ab92-5cdad10bb854</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing</typePackageName>
+      <typePackageId>4fb13e32-ef0f-4708-821b-961eee9521b4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="006cbe23-0388-43a6-9feb-1fbd1a0baf13" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
+    <name>CustomerDeliveryAddressChangedEvent</name>
+    <display>publish: CustomerDeliveryAddressChangedEvent</display>
+    <order>1</order>
+    <typeReference id="28a9c45e-9a17-481c-9860-a4bef9ab8f2e">
+      <typeId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Publish Assocation</associationType>
+  <associationTypeId>022d4c90-e1b6-4747-a15f-640c19503a8f</associationTypeId>
+  <stereotypes />
+</association>

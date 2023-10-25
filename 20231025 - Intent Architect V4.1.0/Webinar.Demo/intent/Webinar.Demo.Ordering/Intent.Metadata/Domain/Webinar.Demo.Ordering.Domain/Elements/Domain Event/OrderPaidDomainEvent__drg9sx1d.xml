@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="199994b8-84cf-47c7-82ee-cb4ed0ce37b3" type="Domain Event" typeId="0814e459-fb9b-47db-b7eb-32ce30397e8a">
+  <name>OrderPaidDomainEvent</name>
+  <display>OrderPaidDomainEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</parentFolderId>
+  <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+  <packageName>Webinar.Demo.Ordering.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="4e5a707c-682d-4d4f-814a-0e6b5bd6b1af" type="Property" typeId="b4d69073-5abb-4968-b41b-545b2f7408ed">
+      <name>Order</name>
+      <display>Order: Order</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bf7cf8f9-35aa-45d3-b8ea-82b918665ca5">
+        <typeId>6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+        <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>199994b8-84cf-47c7-82ee-cb4ed0ce37b3</parentFolderId>
+      <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+      <packageName>Webinar.Demo.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

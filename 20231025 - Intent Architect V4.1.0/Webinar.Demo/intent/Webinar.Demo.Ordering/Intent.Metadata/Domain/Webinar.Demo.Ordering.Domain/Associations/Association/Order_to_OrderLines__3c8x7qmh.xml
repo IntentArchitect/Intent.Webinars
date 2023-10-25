@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="7202ad30-8907-4f83-9bc7-6b2eec4c4032">
+  <sourceEnd id="d6e5da4e-8187-495b-9bd7-43038e2c6312" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>0</order>
+    <typeReference id="5dbe3b8e-7de7-4bbf-bea0-238657edee47">
+      <typeId>6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="7202ad30-8907-4f83-9bc7-6b2eec4c4032" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderLines</name>
+    <display>OrderLines: OrderLine[*]   [1 --&gt; *]</display>
+    <order>9</order>
+    <typeReference id="11e2da11-ec1f-4e15-926c-34054f94257e">
+      <typeId>85814341-d68d-4154-9ab9-341d9dbb368f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

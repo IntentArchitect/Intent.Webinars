@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f05eb35a-2234-4ce2-80fe-220e91c1dad1" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>Webinar.Demo.Basket</name>
+  <display>Webinar.Demo.Basket</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>96fc32a3-cecc-4e56-83d4-87a0c54722fa</parentFolderId>
+  <packageId>96fc32a3-cecc-4e56-83d4-87a0c54722fa</packageId>
+  <packageName>Webinar.Demo.Basket.Eventing</packageName>
+  <diagram>
+    <targetPackageId>0faf7031-1f25-4db6-a69e-a0ba3d0d1ff6</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

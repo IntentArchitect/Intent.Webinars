@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="4a979ce9-f39a-4b95-847a-6da38ecb4a36" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>CustomerDeliveryAddressChangedEvent</name>
+  <display>CustomerDeliveryAddressChangedEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>true</isMapped>
+  <mappedClass>
+    <applicationId>baf22102-0897-4652-8223-daa438dded47</applicationId>
+    <metadataId>6ab29b31-27af-4f56-a67c-986d82097d63</metadataId>
+    <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+    <autoSyncTypeReference>true</autoSyncTypeReference>
+    <mappedPath>
+      <target id="7ea5783b-63a4-4861-b647-cb4075d511c6" name="CustomerDeliveryAddressChangedDomainEvent" type="element" specialization="Domain Event" />
+    </mappedPath>
+  </mappedClass>
+  <parentFolderId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</parentFolderId>
+  <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+  <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="6c13cec1-48a5-47fc-be32-fa6d4d386f9d" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CustomerId</name>
+      <display>CustomerId: guid</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="140c80a4-a660-48ec-81ec-552481bcf412">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="85ae160d-690d-473d-937a-8d2249bbaa77" name="CustomerId" type="element" specialization="Property" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</parentFolderId>
+      <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+      <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d37776b1-221a-4ea4-ba60-7ab9fbb0b74e" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>AddressLine1</name>
+      <display>AddressLine1: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6aa14269-b315-4ae5-80a5-a2b24ea43988">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="caa13a4e-89d4-4974-831d-f19b273f4567" name="Address" type="element" specialization="Property" />
+          <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</parentFolderId>
+      <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+      <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ef3557ea-cda0-45b4-889c-2337a65633d5" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>AddressLine2</name>
+      <display>AddressLine2: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d5b11434-fbd1-4fb4-a77c-ac3d7b777549">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="caa13a4e-89d4-4974-831d-f19b273f4567" name="Address" type="element" specialization="Property" />
+          <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</parentFolderId>
+      <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+      <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="30202bdc-543f-48d2-8a89-598bc6b7c288" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>AddressCity</name>
+      <display>AddressCity: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="790c8d5a-1082-48bd-8027-b2e4b75358a8">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="caa13a4e-89d4-4974-831d-f19b273f4567" name="Address" type="element" specialization="Property" />
+          <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</parentFolderId>
+      <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+      <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2d281490-da43-4668-be4e-10248806071d" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>AddressPostal</name>
+      <display>AddressPostal: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e820bb02-6f06-4611-ba95-fc00268352f4">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="caa13a4e-89d4-4974-831d-f19b273f4567" name="Address" type="element" specialization="Property" />
+          <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>4a979ce9-f39a-4b95-847a-6da38ecb4a36</parentFolderId>
+      <packageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</packageId>
+      <packageName>Webinar.Demo.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

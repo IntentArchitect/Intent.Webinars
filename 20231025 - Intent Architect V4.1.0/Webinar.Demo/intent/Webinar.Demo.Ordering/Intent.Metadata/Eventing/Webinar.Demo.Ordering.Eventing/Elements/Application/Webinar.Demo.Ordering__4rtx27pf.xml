@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="9e750045-6b86-4bd1-ab92-5cdad10bb854" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>Webinar.Demo.Ordering</name>
+  <display>Webinar.Demo.Ordering</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4fb13e32-ef0f-4708-821b-961eee9521b4</parentFolderId>
+  <packageId>4fb13e32-ef0f-4708-821b-961eee9521b4</packageId>
+  <packageName>Webinar.Demo.Ordering.Eventing</packageName>
+  <diagram>
+    <targetPackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

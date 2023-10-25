@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5e1cb422-bda9-4e8e-9866-3ea66b6fe384">
+  <sourceEnd id="7298b68f-c2a1-4736-80ac-0f27e76a23b2" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>0</order>
+    <typeReference id="5bf867e2-f69c-4bac-99a6-71a1dbbc5fbe">
+      <typeId>3330cb5f-633f-453c-8f67-73879d0a6f89</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5e1cb422-bda9-4e8e-9866-3ea66b6fe384" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>BillingAddress</name>
+    <display>BillingAddress: Address?   [1 --&gt; 0..1]</display>
+    <order>5</order>
+    <typeReference id="dba62f99-a139-4136-b4ba-6323a0671549">
+      <typeId>0451f3bb-aa2a-423a-abc7-3ff9322a8289</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

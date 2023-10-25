@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f6d13496-4366-44b4-bc86-8e8604920c13">
+  <sourceEnd id="053e732a-93e7-4c2c-8042-e300ea71df8b" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Basket</name>
+    <display>Basket: Basket</display>
+    <order>0</order>
+    <typeReference id="1e8251dd-b8df-47a4-a123-43c616789e51">
+      <typeId>f01f9a80-5c05-46ea-bb2e-b166b7b3d5e9</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Basket.Domain</typePackageName>
+      <typePackageId>5b588157-4ca6-46c6-a1a7-432ac20e279b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f6d13496-4366-44b4-bc86-8e8604920c13" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>BasketLines</name>
+    <display>BasketLines: BasketLine[*]   [1 --&gt; *]</display>
+    <order>1</order>
+    <typeReference id="7dee751a-84fc-496d-953b-95591f3c83cc">
+      <typeId>3c83dcb3-7e43-483a-a9bd-f65c592de26b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Basket.Domain</typePackageName>
+      <typePackageId>5b588157-4ca6-46c6-a1a7-432ac20e279b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

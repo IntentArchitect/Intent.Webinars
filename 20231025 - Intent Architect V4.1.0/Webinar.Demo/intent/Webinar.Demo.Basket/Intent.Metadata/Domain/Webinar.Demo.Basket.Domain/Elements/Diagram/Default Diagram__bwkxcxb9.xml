@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ca37909d-9bf0-431c-93ef-fe01a8331ffb" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>Default Diagram</name>
+  <display>Default Diagram</display>
+  <externalReference>1b7fb00b-5ce4-45b8-876c-8f0f1874fdbb</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5b588157-4ca6-46c6-a1a7-432ac20e279b</parentFolderId>
+  <packageId>5b588157-4ca6-46c6-a1a7-432ac20e279b</packageId>
+  <packageName>Webinar.Demo.Basket.Domain</packageName>
+  <diagram>
+    <targetPackageId>5b588157-4ca6-46c6-a1a7-432ac20e279b</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

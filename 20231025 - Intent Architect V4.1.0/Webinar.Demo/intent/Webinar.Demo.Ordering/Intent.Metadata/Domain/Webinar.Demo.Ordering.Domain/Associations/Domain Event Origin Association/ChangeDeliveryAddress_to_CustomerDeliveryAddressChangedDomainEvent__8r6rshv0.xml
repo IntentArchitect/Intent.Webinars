@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ef18977e-7748-4c15-83d7-c5684fb4f665">
+  <sourceEnd id="545cb8a2-da18-4ef6-8ad8-50dd7b89f8ca" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
+    <name>ChangeDeliveryAddress</name>
+    <display>published by : Customer.ChangeDeliveryAddress</display>
+    <order>2</order>
+    <typeReference id="45ab19c4-300c-4ee8-b2e0-dc8adb3cbb73">
+      <typeId>cc633a9f-d084-4b92-97aa-694b48f58e28</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ef18977e-7748-4c15-83d7-c5684fb4f665" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
+    <name>CustomerDeliveryAddressChangedDomainEvent</name>
+    <display>publishes : CustomerDeliveryAddressChangedDomainEvent</display>
+    <order>1</order>
+    <typeReference id="6a50f0ba-3317-443d-b205-496511761799">
+      <typeId>7ea5783b-63a4-4861-b647-cb4075d511c6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Origin Association</associationType>
+  <associationTypeId>4c0cc50b-8a9d-43cd-b731-9f354f69f3c9</associationTypeId>
+  <stereotypes />
+</association>

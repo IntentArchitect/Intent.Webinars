@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5bfeb7ad-066e-48d0-a8b6-aa489696a503">
+  <sourceEnd id="d786a42f-92d8-448d-8fd8-a0811c7a8e71" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
+    <name>Cancel</name>
+    <display>published by : Order.Cancel</display>
+    <order>1</order>
+    <typeReference id="0002dc80-342f-46c7-b123-6b7b6c5651ae">
+      <typeId>a39bc620-25d7-473c-891b-4d22773ec48b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5bfeb7ad-066e-48d0-a8b6-aa489696a503" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
+    <name>OrderCancelledDomainEvent</name>
+    <display>publishes : OrderCancelledDomainEvent</display>
+    <order>0</order>
+    <typeReference id="3c8e959a-f284-410f-a69c-cb1bd61445a3">
+      <typeId>454a2191-d161-4aaf-b4c0-be367952e21d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Origin Association</associationType>
+  <associationTypeId>4c0cc50b-8a9d-43cd-b731-9f354f69f3c9</associationTypeId>
+  <stereotypes />
+</association>

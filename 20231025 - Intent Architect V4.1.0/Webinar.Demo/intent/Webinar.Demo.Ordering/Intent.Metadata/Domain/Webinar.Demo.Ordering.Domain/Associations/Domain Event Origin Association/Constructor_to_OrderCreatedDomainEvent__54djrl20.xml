@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="83ca664a-b12c-4ef6-a6dc-2a1a2bc30375">
+  <sourceEnd id="05fa50d0-9dbe-418a-b5d1-b0c5e04c42a7" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
+    <name>Constructor</name>
+    <display>published by : Order.Constructor</display>
+    <order>1</order>
+    <typeReference id="00aff07f-06d5-4e69-a4ec-bae166e0d53b">
+      <typeId>9ee7460f-3d19-4713-bf6f-e990bddd1096</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="83ca664a-b12c-4ef6-a6dc-2a1a2bc30375" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
+    <name>OrderCreatedDomainEvent</name>
+    <display>publishes : OrderCreatedDomainEvent</display>
+    <order>1</order>
+    <typeReference id="963249d5-6eee-4886-a7a8-2290ffba53d1">
+      <typeId>7b6b9824-c04a-4505-82b6-04eb73fa6038</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Origin Association</associationType>
+  <associationTypeId>4c0cc50b-8a9d-43cd-b731-9f354f69f3c9</associationTypeId>
+  <stereotypes />
+</association>
