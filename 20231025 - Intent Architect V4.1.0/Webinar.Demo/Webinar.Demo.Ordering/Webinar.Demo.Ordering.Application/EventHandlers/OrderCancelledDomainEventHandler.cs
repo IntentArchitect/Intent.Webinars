@@ -28,7 +28,7 @@ namespace Webinar.Demo.Ordering.Application.EventHandlers
             DomainEventNotification<OrderCancelledDomainEvent> notification,
             CancellationToken cancellationToken)
         {
-            var integrationEvent = notification.DomainEvent.MapToOrderCancelled();
+            var integrationEvent = notification.DomainEvent.MapToOrderCancelledEvent();
             _eventBus.Publish(integrationEvent);
         }
     }

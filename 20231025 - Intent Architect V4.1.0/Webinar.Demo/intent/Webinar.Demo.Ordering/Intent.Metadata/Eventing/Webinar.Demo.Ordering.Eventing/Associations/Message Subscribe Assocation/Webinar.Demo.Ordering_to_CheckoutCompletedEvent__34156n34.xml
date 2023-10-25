@@ -22,7 +22,7 @@
   <targetEnd id="2cc14a2d-73d8-4b4a-b67a-cedca0017e35" type="Message Subscribe Assocation Target End" typeId="21c3df1c-5140-4f65-9814-a68e1a577768">
     <name>CheckoutCompletedEvent</name>
     <display>subscribe: CheckoutCompletedEvent</display>
-    <order>4</order>
+    <order>5</order>
     <typeReference id="232214ac-5e6a-4c4d-bd6b-5068aa5e2b75">
       <typeId>9b830fb3-1323-479e-897a-217458107981</typeId>
       <isNavigable>true</isNavigable>

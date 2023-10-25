@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class id="2fbceefe-ecb1-4bcc-b703-f31aec7564a9" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
-  <name>OrderCancelled</name>
-  <display>OrderCancelled</display>
+  <name>OrderCancelledEvent</name>
+  <display>OrderCancelledEvent</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />

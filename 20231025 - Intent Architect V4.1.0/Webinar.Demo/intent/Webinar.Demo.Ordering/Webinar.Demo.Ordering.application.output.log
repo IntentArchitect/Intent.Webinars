@@ -691,6 +691,22 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>df213920-ecdc-4566-b20d-9868cda3409b</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#fc1b3f5f-758b-4d83-8ec3-60c6e3543e73</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/IntegrationEvents/ProductCreatedEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductCreatedEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>df213920-ecdc-4566-b20d-9868cda3409b</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.DomainMapping.MessageExtensions#fc1b3f5f-758b-4d83-8ec3-60c6e3543e73</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/IntegrationEvents/ProductCreatedEventExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductCreatedEventExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>2dcebbd2-b269-4d45-85f3-859510276977</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandModels#f09cc342-f55a-48f2-90ef-0dfd99909a5a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
