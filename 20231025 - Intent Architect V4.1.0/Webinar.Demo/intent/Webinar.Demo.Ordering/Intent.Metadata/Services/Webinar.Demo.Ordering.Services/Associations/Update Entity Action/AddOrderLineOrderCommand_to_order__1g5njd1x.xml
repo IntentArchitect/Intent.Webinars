@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="dabe1615-42b0-4d64-a951-acc3345cdf37">
+  <sourceEnd id="2a66da0f-d918-4960-9865-af0429debc52" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : Orders.AddOrderLineOrderCommand</display>
+    <order>0</order>
+    <typeReference id="cbb440b6-0932-4aed-9d26-a87d2132b432">
+      <typeId>f09cc342-f55a-48f2-90ef-0dfd99909a5a</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="dabe1615-42b0-4d64-a951-acc3345cdf37" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>order</name>
+    <display>[update] order: AddOrderLine</display>
+    <order>5</order>
+    <typeReference id="ee397aee-a2dd-41f1-b645-8e99d1706ab2">
+      <typeId>3708ad34-3621-4524-8a86-462b00883b92</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="f09cc342-f55a-48f2-90ef-0dfd99909a5a" location="AddOrderLineOrderCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" location="Order" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="1d08a204-5f72-4da6-9f7a-72cc1c2a23d6" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                  <target id="97e95f85-bad9-4249-8752-c3ab5ba5aafd" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="f09cc342-f55a-48f2-90ef-0dfd99909a5a" location="AddOrderLineOrderCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" location="Order" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{AddOrderLineOrderCommand}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="3708ad34-3621-4524-8a86-462b00883b92" name="AddOrderLine" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="AddOrderLineOrderCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ProductId}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="3708ad34-3621-4524-8a86-462b00883b92" name="AddOrderLine" type="element" specialization="Operation" />
+              <target id="a58af287-35ef-468a-8b39-a0e895326a39" name="productId" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="ProductId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                  <target id="88a85b57-4e63-4f98-8518-c256e2c9037b" name="ProductId" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Units}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="3708ad34-3621-4524-8a86-462b00883b92" name="AddOrderLine" type="element" specialization="Operation" />
+              <target id="01995bde-d81f-4ba0-a8dc-418c83c7e2c8" name="units" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Units" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                  <target id="68446e41-50a1-4b87-aafa-b7b0a928fe6e" name="Units" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{UnitPrice}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="3708ad34-3621-4524-8a86-462b00883b92" name="AddOrderLine" type="element" specialization="Operation" />
+              <target id="d47b1073-ec3e-4a24-a271-dc22dbbd82dc" name="unitPrice" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="UnitPrice" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                  <target id="ae4a6108-7338-48fa-a601-35257392e731" name="UnitPrice" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Discount}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="3708ad34-3621-4524-8a86-462b00883b92" name="AddOrderLine" type="element" specialization="Operation" />
+              <target id="008668c8-800e-4c47-89a5-abdb892ba2d8" name="discount" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Discount" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="f09cc342-f55a-48f2-90ef-0dfd99909a5a" name="AddOrderLineOrderCommand" type="element" specialization="Command" />
+                  <target id="68f1a61b-7f62-4dcd-8163-969a25502c27" name="Discount" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

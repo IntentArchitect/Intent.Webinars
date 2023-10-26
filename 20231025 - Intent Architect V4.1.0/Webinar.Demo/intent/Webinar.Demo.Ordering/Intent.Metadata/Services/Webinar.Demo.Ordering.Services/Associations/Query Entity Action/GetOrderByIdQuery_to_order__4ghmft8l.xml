@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5975a540-a13b-47ae-a459-655fb8334f21">
+  <sourceEnd id="ae8556cc-88b0-452a-a072-ba2e210a0de4" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetOrderByIdQuery</display>
+    <order>0</order>
+    <typeReference id="e8446029-c6ee-4361-bf00-ea96d26d462c">
+      <typeId>4696cfc5-ab81-41c3-a85e-2af4c91a203a</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5975a540-a13b-47ae-a459-655fb8334f21" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>order</name>
+    <display>[query] order: Order</display>
+    <order>1</order>
+    <typeReference id="cd0bb32b-eeca-43c0-ae95-e8800332fbd2">
+      <typeId>6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="4696cfc5-ab81-41c3-a85e-2af4c91a203a" location="GetOrderByIdQuery" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" location="Order" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="6c4fe8a6-ef0c-4dd2-a170-f86698ecafa1" name="Order" type="element" specialization="Class" />
+              <target id="1d08a204-5f72-4da6-9f7a-72cc1c2a23d6" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="4696cfc5-ab81-41c3-a85e-2af4c91a203a" name="GetOrderByIdQuery" type="element" specialization="Query" />
+                  <target id="ecc5b27b-9f85-48da-98ce-5614a3901d7f" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

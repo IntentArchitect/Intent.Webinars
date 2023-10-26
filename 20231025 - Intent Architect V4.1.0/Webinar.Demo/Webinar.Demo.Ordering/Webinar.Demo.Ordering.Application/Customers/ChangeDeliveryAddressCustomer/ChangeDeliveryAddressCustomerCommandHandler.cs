@@ -27,19 +27,17 @@ namespace Webinar.Demo.Ordering.Application.Customers.ChangeDeliveryAddressCusto
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(ChangeDeliveryAddressCustomerCommand request, CancellationToken cancellationToken)
         {
-            var existingCustomer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingCustomer is null)
+            var customer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (customer is null)
             {
                 throw new NotFoundException($"Could not find Customer '{request.Id}'");
             }
 
-            existingCustomer.ChangeDeliveryAddress(CreateAddress(request.Address));
-        }
-
-        [IntentManaged(Mode.Fully)]
-        public static Address CreateAddress(ChangeAddressDto dto)
-        {
-            return new Address(line1: dto.Line1, line2: dto.Line2, city: dto.City, postal: dto.Postal);
+            customer.ChangeDeliveryAddress(new Address(
+                request.Address.Line1,
+                request.Address.Line2,
+                request.Address.City,
+                request.Address.Postal));
         }
     }
 }

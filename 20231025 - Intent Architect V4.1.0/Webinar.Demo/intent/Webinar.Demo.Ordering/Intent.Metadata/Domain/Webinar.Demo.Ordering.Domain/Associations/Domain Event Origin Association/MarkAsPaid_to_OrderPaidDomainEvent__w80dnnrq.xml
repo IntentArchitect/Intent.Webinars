@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="ec09b90c-584b-464b-b3ac-aa962a0a0467">
   <sourceEnd id="9d41ee19-44b4-4117-be21-ffd109864b2f" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
-    <name>MarkAsPaid</name>
     <display>published by : Order.MarkAsPaid</display>
     <order>1</order>
     <typeReference id="6ad38e22-864e-4991-a10a-0bc79fff0a73">
@@ -20,7 +19,6 @@
     <childElements />
   </sourceEnd>
   <targetEnd id="ec09b90c-584b-464b-b3ac-aa962a0a0467" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
-    <name>OrderPaidDomainEvent</name>
     <display>publishes : OrderPaidDomainEvent</display>
     <order>0</order>
     <typeReference id="df1a226f-57c7-4373-89b1-49f7e33195c6">

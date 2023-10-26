@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Webinar.Demo.Ordering.Application.Common.Interfaces;
@@ -10,11 +11,13 @@ namespace Webinar.Demo.Ordering.Application.Orders.CreateOrder
 {
     public class CreateOrderCommand : IRequest<Guid>, ICommand
     {
-        public CreateOrderCommand(Guid customerId)
+        public CreateOrderCommand(Guid customerId, List<CreateOrderCommandBasketLinesDto> basketLines)
         {
             CustomerId = customerId;
+            BasketLines = basketLines;
         }
 
         public Guid CustomerId { get; set; }
+        public List<CreateOrderCommandBasketLinesDto> BasketLines { get; set; }
     }
 }

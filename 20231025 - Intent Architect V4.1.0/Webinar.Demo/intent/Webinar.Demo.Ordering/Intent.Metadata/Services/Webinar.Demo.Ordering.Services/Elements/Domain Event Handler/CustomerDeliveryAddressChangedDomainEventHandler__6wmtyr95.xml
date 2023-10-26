@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8f38b763-6825-4e9e-bc87-5db41b90835d" type="Domain Event Handler" typeId="d80e61c5-7e4c-4175-9df1-0413f664824c">
+  <name>CustomerDeliveryAddressChangedDomainEventHandler</name>
+  <display>CustomerDeliveryAddressChangedDomainEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>58abd0be-cab1-4987-9f9b-63d776719539</parentFolderId>
+  <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
+  <packageName>Webinar.Demo.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

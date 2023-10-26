@@ -24,10 +24,10 @@ namespace Webinar.Demo.Ordering.Infrastructure.Persistence.Configurations
             builder.Property(x => x.Email)
                 .IsRequired();
 
-            builder.OwnsOne(x => x.BillingAddress, ConfigureBillingAddress);
-
             builder.OwnsOne(x => x.DeliveryAddress, ConfigureDeliveryAddress)
                 .Navigation(x => x.DeliveryAddress).IsRequired();
+
+            builder.OwnsOne(x => x.BillingAddress, ConfigureBillingAddress);
 
             builder.Ignore(e => e.DomainEvents);
         }

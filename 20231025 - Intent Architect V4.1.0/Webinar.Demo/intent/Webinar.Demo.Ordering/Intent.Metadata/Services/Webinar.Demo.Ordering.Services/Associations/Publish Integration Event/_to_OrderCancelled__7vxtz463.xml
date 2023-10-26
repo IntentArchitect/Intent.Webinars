@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b886da71-e96b-4087-85bf-f16d9c54aee2">
+  <sourceEnd id="9846c508-dbc1-4488-8269-19306d1bfd16" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : OrderCancelledDomainEventHandler.</display>
+    <order>0</order>
+    <typeReference id="8354e231-f1a2-44b5-a74a-7691bced69cc">
+      <typeId>ff068acb-5808-4a71-915a-1f803ff78ba1</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b886da71-e96b-4087-85bf-f16d9c54aee2" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>publish: OrderCancelled</display>
+    <order>0</order>
+    <typeReference id="2c0cea96-80d8-401e-a8d3-22a324433818">
+      <typeId>2fbceefe-ecb1-4bcc-b703-f31aec7564a9</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ff068acb-5808-4a71-915a-1f803ff78ba1" location="[Webinar.Demo.Ordering].[Services].[]" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="822e4254-9ced-4dd1-ad56-500b861f7e4d" elementId="2fbceefe-ecb1-4bcc-b703-f31aec7564a9" location="[Webinar.Demo.Ordering].[Eventing].[OrderCancelled]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Order.Id}</expression>
+            <path>
+              <target id="2fbceefe-ecb1-4bcc-b703-f31aec7564a9" name="OrderCancelled" type="element" specialization="Message" />
+              <target id="f9386aad-82e7-453c-b547-15233ba62dc5" name="OrderId" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Id" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="ff068acb-5808-4a71-915a-1f803ff78ba1" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="e0eb6d86-c9fe-46f4-bc8f-bf3d0c440c88" name="Order" type="element" specialization="Property" />
+                  <target id="1d08a204-5f72-4da6-9f7a-72cc1c2a23d6" name="Id" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

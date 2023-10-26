@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a95a582e-9417-4a68-921b-ddce4546faf1" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>My New Diagram</name>
+  <display>My New Diagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</parentFolderId>
+  <packageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</packageId>
+  <packageName>Webinar.Demo.Ordering.Domain</packageName>
+  <diagram>
+    <targetPackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

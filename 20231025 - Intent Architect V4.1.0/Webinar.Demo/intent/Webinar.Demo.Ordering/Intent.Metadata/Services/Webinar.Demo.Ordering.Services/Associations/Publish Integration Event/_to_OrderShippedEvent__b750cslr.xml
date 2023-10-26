@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="85bd0894-fb62-4276-bcc8-9d61a077f7f6">
+  <sourceEnd id="cd828aed-2cb7-447b-ae8b-98ce202d84be" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : OrderShipedDomainEventHandler.</display>
+    <order>0</order>
+    <typeReference id="4a054551-4c42-40ff-8ad6-0c69a87bb122">
+      <typeId>92daa45a-5094-405f-9d22-edb6f98ab050</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="85bd0894-fb62-4276-bcc8-9d61a077f7f6" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>publish: OrderShippedEvent</display>
+    <order>0</order>
+    <typeReference id="99fb2d8a-bd62-4a70-9ebc-da3dc844b1b0">
+      <typeId>fc908bea-65a3-4c93-83e2-82b2e90d5c7c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="92daa45a-5094-405f-9d22-edb6f98ab050" location="[Webinar.Demo.Ordering].[Services].[]" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="822e4254-9ced-4dd1-ad56-500b861f7e4d" elementId="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" location="[Webinar.Demo.Ordering].[Eventing].[OrderShippedEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Order.Id}</expression>
+            <path>
+              <target id="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" name="OrderShippedEvent" type="element" specialization="Message" />
+              <target id="219ad1ce-69af-40e1-a8a7-ff3d414d8e67" name="OrderId" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Id" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="92daa45a-5094-405f-9d22-edb6f98ab050" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
+                  <target id="1d08a204-5f72-4da6-9f7a-72cc1c2a23d6" name="Id" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.Customer.DeliveryAddress.Line1}</expression>
+            <path>
+              <target id="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" name="OrderShippedEvent" type="element" specialization="Message" />
+              <target id="91c09baa-35f7-426b-a4f4-7d2f1e838ed0" name="DeliveryAddressLine1" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Customer.DeliveryAddress.Line1" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="92daa45a-5094-405f-9d22-edb6f98ab050" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
+                  <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+                  <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+                  <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.Customer.DeliveryAddress.Line2}</expression>
+            <path>
+              <target id="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" name="OrderShippedEvent" type="element" specialization="Message" />
+              <target id="50326486-1ed1-454c-a66c-b54b36f1959c" name="DeliveryAddressLine2" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Customer.DeliveryAddress.Line2" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="92daa45a-5094-405f-9d22-edb6f98ab050" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
+                  <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+                  <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+                  <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.Customer.DeliveryAddress.City}</expression>
+            <path>
+              <target id="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" name="OrderShippedEvent" type="element" specialization="Message" />
+              <target id="1888e6f8-3912-48b7-87d8-4b22c39eb29b" name="DeliveryAddressCity" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Customer.DeliveryAddress.City" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="92daa45a-5094-405f-9d22-edb6f98ab050" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
+                  <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+                  <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+                  <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.Customer.DeliveryAddress.Postal}</expression>
+            <path>
+              <target id="fc908bea-65a3-4c93-83e2-82b2e90d5c7c" name="OrderShippedEvent" type="element" specialization="Message" />
+              <target id="f04dfc4d-829c-4cf9-9abb-bdf18c92474b" name="DeliveryAddressPostal" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Customer.DeliveryAddress.Postal" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="92daa45a-5094-405f-9d22-edb6f98ab050" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
+                  <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+                  <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+                  <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

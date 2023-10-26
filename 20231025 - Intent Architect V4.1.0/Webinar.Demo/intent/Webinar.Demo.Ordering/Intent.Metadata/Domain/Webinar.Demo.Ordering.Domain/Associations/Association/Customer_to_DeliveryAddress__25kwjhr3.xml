@@ -22,7 +22,7 @@
   <targetEnd id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>DeliveryAddress</name>
     <display>DeliveryAddress: Address   [1 --&gt; 1]</display>
-    <order>6</order>
+    <order>5</order>
     <typeReference id="0039e2be-af82-4f8a-9696-43379301d835">
       <typeId>0451f3bb-aa2a-423a-abc7-3ff9322a8289</typeId>
       <isNavigable>true</isNavigable>

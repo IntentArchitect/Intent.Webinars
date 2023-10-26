@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="62321e03-432a-43bb-822f-dac67d4c392f">
+  <sourceEnd id="7cf913c3-bb12-4206-a2e1-832af2aef71c" type="Send Command Source End" typeId="6b9e34dd-b50f-4998-a3cf-93dde7b2d51e">
+    <display>published by : CheckoutCompletedEventHandler.</display>
+    <order>0</order>
+    <typeReference id="1abdc536-514f-4cd2-931f-ad391fc5b22a">
+      <typeId>6c9939b5-df22-4e38-b417-73738c46525b</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="62321e03-432a-43bb-822f-dac67d4c392f" type="Send Command Target End" typeId="d3096261-1268-440f-8db3-0a6b8b4786cc">
+    <display>publish: CreateOrderCommand</display>
+    <order>0</order>
+    <typeReference id="aa462d2e-f347-493c-bc7c-b3a4a46350b8">
+      <typeId>7368dfa5-8926-4fcf-afd1-96989e78a56e</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Integration Event Handler to Command Mapping" typeId="a4c4c5cc-76df-48ed-9d4e-c35caf44b567">
+        <source elementId="9b830fb3-1323-479e-897a-217458107981" location="[Webinar.Demo.Ordering].[Services].[CheckoutCompletedEvent]" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="7368dfa5-8926-4fcf-afd1-96989e78a56e" location="[Webinar.Demo.Ordering].[Services].[CreateOrderCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="8b00a194-3b51-4ce7-af1a-b2eaee26f3fd" name="CustomerId" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="f8ee761a-8b59-4818-ad4c-6ab6ed50cfef" name="Id" type="element" specialization="Property" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketLines}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="a77f6971-8e62-43ac-bdf5-cc7379e1c67b" name="BasketLines" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="BasketLines" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="283bdf98-4e29-4cfe-bb93-c4dd21ec05f9" name="BasketLines" type="element" specialization="Property" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketLines.ProductId}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="a77f6971-8e62-43ac-bdf5-cc7379e1c67b" name="BasketLines" type="element" specialization="DTO-Field" />
+              <target id="e6a43629-5462-4cb8-9ce5-8de832f69898" name="ProductId" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="BasketLines.ProductId" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="283bdf98-4e29-4cfe-bb93-c4dd21ec05f9" name="BasketLines" type="element" specialization="Property" />
+                  <target id="f5de65a2-8cdc-4b17-99f4-7de102e3a0bd" name="ProductId" type="element" specialization="Eventing DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketLines.Units}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="a77f6971-8e62-43ac-bdf5-cc7379e1c67b" name="BasketLines" type="element" specialization="DTO-Field" />
+              <target id="9440e5d6-2425-49fc-ae09-2c961cd91271" name="Units" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="BasketLines.Units" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="283bdf98-4e29-4cfe-bb93-c4dd21ec05f9" name="BasketLines" type="element" specialization="Property" />
+                  <target id="1c3e18ef-d343-4016-bc74-a9bb0e658125" name="Units" type="element" specialization="Eventing DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketLines.UnitPrice}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="a77f6971-8e62-43ac-bdf5-cc7379e1c67b" name="BasketLines" type="element" specialization="DTO-Field" />
+              <target id="2d8d4034-87ca-4701-af77-e7672967bb57" name="UnitPrice" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="BasketLines.UnitPrice" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="283bdf98-4e29-4cfe-bb93-c4dd21ec05f9" name="BasketLines" type="element" specialization="Property" />
+                  <target id="880afcc5-255e-40db-b38c-da02f40151b8" name="UnitPrice" type="element" specialization="Eventing DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketLines.Discount}</expression>
+            <path>
+              <target id="7368dfa5-8926-4fcf-afd1-96989e78a56e" name="CreateOrderCommand" type="element" specialization="Command" />
+              <target id="a77f6971-8e62-43ac-bdf5-cc7379e1c67b" name="BasketLines" type="element" specialization="DTO-Field" />
+              <target id="a85f8c8e-69e9-4a42-b074-0b2f548a8fc1" name="Discount" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="BasketLines.Discount" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="9b830fb3-1323-479e-897a-217458107981" name="CheckoutCompletedEvent" type="element" specialization="Message" />
+                  <target id="283bdf98-4e29-4cfe-bb93-c4dd21ec05f9" name="BasketLines" type="element" specialization="Property" />
+                  <target id="a568310d-d8b9-444f-a934-8373f3c353bd" name="Discount" type="element" specialization="Eventing DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Send Command</associationType>
+  <associationTypeId>38a3de5a-ca88-4f6e-88b9-88e5953936b2</associationTypeId>
+  <stereotypes />
+</association>

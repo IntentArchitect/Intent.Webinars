@@ -27,22 +27,20 @@ namespace Webinar.Demo.Ordering.Application.Customers.UpdateCustomer
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(UpdateCustomerCommand request, CancellationToken cancellationToken)
         {
-            var existingCustomer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingCustomer is null)
+            var customer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (customer is null)
             {
                 throw new NotFoundException($"Could not find Customer '{request.Id}'");
             }
 
-            existingCustomer.Name = request.Name;
-            existingCustomer.Surname = request.Surname;
-            existingCustomer.Email = request.Email;
-            existingCustomer.DeliveryAddress = CreateAddress(request.DeliveryAddress);
-        }
-
-        [IntentManaged(Mode.Fully)]
-        public static Address CreateAddress(UpdateCustomerAddressDto dto)
-        {
-            return new Address(line1: dto.Line1, line2: dto.Line2, city: dto.City, postal: dto.Postal);
+            customer.Name = request.Name;
+            customer.Surname = request.Surname;
+            customer.Email = request.Email;
+            customer.DeliveryAddress = new Address(
+                request.DeliveryAddress.Line1,
+                request.DeliveryAddress.Line2,
+                request.DeliveryAddress.City,
+                request.DeliveryAddress.Postal);
         }
     }
 }

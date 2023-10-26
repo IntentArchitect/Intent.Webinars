@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ff068acb-5808-4a71-915a-1f803ff78ba1">
+  <sourceEnd id="949a4557-24c1-49e0-a27a-94c1c7153ccf" type="Domain Event Handler Association Source End" typeId="79f048d4-4c09-4405-be8f-95473a981556">
+    <display>: OrderCancelledDomainEventHandler</display>
+    <order>0</order>
+    <typeReference id="53e5f49c-1975-433d-bf6a-9ad3f91208f5">
+      <typeId>a2bb3368-1397-47c0-af31-7a9f39dbc83f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ff068acb-5808-4a71-915a-1f803ff78ba1" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
+    <display>handles : OrderCancelledDomainEvent</display>
+    <order>0</order>
+    <typeReference id="b7b56b03-42fd-4cfe-a50f-56d93e7c6ef1">
+      <typeId>454a2191-d161-4aaf-b4c0-be367952e21d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Handler Association</associationType>
+  <associationTypeId>90831494-f069-44eb-b488-ab2dba7518ea</associationTypeId>
+  <stereotypes />
+</association>

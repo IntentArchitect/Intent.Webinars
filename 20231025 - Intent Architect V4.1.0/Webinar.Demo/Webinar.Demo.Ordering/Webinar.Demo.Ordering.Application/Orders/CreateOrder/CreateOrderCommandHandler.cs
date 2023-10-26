@@ -26,11 +26,11 @@ namespace Webinar.Demo.Ordering.Application.Orders.CreateOrder
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task<Guid> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
-            var newOrder = new Order(request.CustomerId);
-
-            _orderRepository.Add(newOrder);
+            var order = new Order(
+                request.CustomerId);
+            _orderRepository.Add(order);
             await _orderRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
-            return newOrder.Id;
+            return order.Id;
         }
     }
 }

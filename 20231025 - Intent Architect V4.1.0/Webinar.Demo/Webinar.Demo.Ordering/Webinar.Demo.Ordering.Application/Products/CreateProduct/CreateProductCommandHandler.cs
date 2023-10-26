@@ -30,17 +30,22 @@ namespace Webinar.Demo.Ordering.Application.Products.CreateProduct
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var newProduct = new Product
+            var product = new Product
             {
                 Name = request.Name,
                 Description = request.Description,
-                Price = request.Price,
+                Price = request.Price
             };
-
-            _productRepository.Add(newProduct);
+            _productRepository.Add(product);
             await _productRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
-            _eventBus.Publish(newProduct.MapToProductCreatedEvent());
-            return newProduct.Id;
+            _eventBus.Publish(new ProductCreatedEvent
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price
+            });
+            return product.Id;
         }
     }
 }

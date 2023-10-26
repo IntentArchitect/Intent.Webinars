@@ -25,13 +25,12 @@ namespace Webinar.Demo.Ordering.Application.Customers.DeleteCustomer
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(DeleteCustomerCommand request, CancellationToken cancellationToken)
         {
-            var existingCustomer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingCustomer is null)
+            var customer = await _customerRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (customer is null)
             {
                 throw new NotFoundException($"Could not find Customer '{request.Id}'");
             }
-
-            _customerRepository.Remove(existingCustomer);
+            _customerRepository.Remove(customer);
         }
     }
 }

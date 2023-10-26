@@ -27,23 +27,20 @@ namespace Webinar.Demo.Ordering.Application.Customers.CreateCustomer
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task<Guid> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
         {
-            var newCustomer = new Customer
+            var customer = new Customer
             {
                 Name = request.Name,
                 Surname = request.Surname,
                 Email = request.Email,
-                DeliveryAddress = CreateAddress(request.DeliveryAddress),
+                DeliveryAddress = new Address(
+                    request.DeliveryAddress.Line1,
+                    request.DeliveryAddress.Line2,
+                    request.DeliveryAddress.City,
+                    request.DeliveryAddress.Postal)
             };
-
-            _customerRepository.Add(newCustomer);
+            _customerRepository.Add(customer);
             await _customerRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
-            return newCustomer.Id;
-        }
-
-        [IntentManaged(Mode.Fully)]
-        public static Address CreateAddress(CreateCustomerAddressDto dto)
-        {
-            return new Address(line1: dto.Line1, line2: dto.Line2, city: dto.City, postal: dto.Postal);
+            return customer.Id;
         }
     }
 }
