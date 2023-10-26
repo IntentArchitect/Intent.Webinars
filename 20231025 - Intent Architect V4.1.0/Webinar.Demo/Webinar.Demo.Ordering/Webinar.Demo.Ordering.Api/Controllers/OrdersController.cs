@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Net.Mime;
 using System.Threading;
 using System.Threading.Tasks;
 using Intent.RoslynWeaver.Attributes;
@@ -9,11 +8,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Webinar.Demo.Ordering.Api.Controllers.ResponseTypes;
 using Webinar.Demo.Ordering.Application.Orders;
 using Webinar.Demo.Ordering.Application.Orders.AddOrderLineOrder;
 using Webinar.Demo.Ordering.Application.Orders.CancelOrder;
-using Webinar.Demo.Ordering.Application.Orders.CreateOrder;
 using Webinar.Demo.Ordering.Application.Orders.DeleteOrder;
 using Webinar.Demo.Ordering.Application.Orders.GetOrderById;
 using Webinar.Demo.Ordering.Application.Orders.GetOrders;
@@ -80,23 +77,6 @@ namespace Webinar.Demo.Ordering.Api.Controllers
         {
             await _mediator.Send(new CancelOrderCommand(id: id), cancellationToken);
             return NoContent();
-        }
-
-        /// <summary>
-        /// </summary>
-        /// <response code="201">Successfully created.</response>
-        /// <response code="400">One or more validation errors have occurred.</response>
-        [HttpPost("api/order")]
-        [Produces(MediaTypeNames.Application.Json)]
-        [ProducesResponseType(typeof(JsonResponse<Guid>), StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<JsonResponse<Guid>>> CreateOrder(
-            [FromBody] CreateOrderCommand command,
-            CancellationToken cancellationToken = default)
-        {
-            var result = await _mediator.Send(command, cancellationToken);
-            return CreatedAtAction(nameof(GetOrderById), new { id = result }, new JsonResponse<Guid>(result));
         }
 
         /// <summary>

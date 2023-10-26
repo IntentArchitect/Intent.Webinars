@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b0d7db38-83a9-4be0-8af9-44999fe77f69" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Products</name>
+  <display>Products</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>58adadf1-83bc-4849-959d-db8238330d0d</parentFolderId>
+  <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
+  <packageName>Webinar.Demo.Ordering.Services</packageName>
+  <diagram>
+    <targetPackageId>58adadf1-83bc-4849-959d-db8238330d0d</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

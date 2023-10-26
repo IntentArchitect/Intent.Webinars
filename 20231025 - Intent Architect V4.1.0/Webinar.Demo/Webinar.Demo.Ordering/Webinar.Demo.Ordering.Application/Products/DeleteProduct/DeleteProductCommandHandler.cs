@@ -25,13 +25,12 @@ namespace Webinar.Demo.Ordering.Application.Products.DeleteProduct
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            var existingProduct = await _productRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingProduct is null)
+            var product = await _productRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (product is null)
             {
                 throw new NotFoundException($"Could not find Product '{request.Id}'");
             }
-
-            _productRepository.Remove(existingProduct);
+            _productRepository.Remove(product);
         }
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="611fe7ef-ac49-430a-8476-4c43a08ae431" type="Domain Event Handler" typeId="d80e61c5-7e4c-4175-9df1-0413f664824c">
+  <name>OrderShipedDomainEventHandler</name>
+  <display>OrderShipedDomainEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>12aa98f7-412e-4188-937a-e92dbd15ce71</parentFolderId>
+  <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
+  <packageName>Webinar.Demo.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

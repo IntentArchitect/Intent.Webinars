@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="3c71a690-ec4f-4a6c-aa20-ca3d2ce59a3c">
+  <sourceEnd id="613e266b-ea11-4024-b199-2f7f9ccb1723" type="Delete Entity Action Source End" typeId="8c2d9fed-bd14-44b2-9f98-8a801aaf157e">
+    <display>deleted by : Products.DeleteProductCommand</display>
+    <order>0</order>
+    <typeReference id="10946493-c2b4-410b-8ddd-45146fd83708">
+      <typeId>62de2456-9ee6-4a68-b37f-e371f46526d2</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="3c71a690-ec4f-4a6c-aa20-ca3d2ce59a3c" type="Delete Entity Action Target End" typeId="4a04cfc2-5841-438c-9c16-fb58b784b365">
+    <name>product</name>
+    <display>[delete] product: Product</display>
+    <order>1</order>
+    <typeReference id="6ffcba1f-d125-497d-aa32-542204f0fee5">
+      <typeId>4ea0ad43-02f4-441f-9e36-a974974d15c5</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source elementId="62de2456-9ee6-4a68-b37f-e371f46526d2" location="DeleteProductCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="4ea0ad43-02f4-441f-9e36-a974974d15c5" location="Product" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="4ea0ad43-02f4-441f-9e36-a974974d15c5" name="Product" type="element" specialization="Class" />
+              <target id="ce765b70-ada1-4f86-805c-197eba9a5f69" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="62de2456-9ee6-4a68-b37f-e371f46526d2" name="DeleteProductCommand" type="element" specialization="Command" />
+                  <target id="3d5e7e0e-003a-421e-b1b9-195aba0ce357" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Delete Entity Action</associationType>
+  <associationTypeId>bfc823fb-60ab-451d-ba62-12671fe7e28e</associationTypeId>
+  <stereotypes />
+</association>

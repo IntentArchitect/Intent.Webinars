@@ -26,15 +26,15 @@ namespace Webinar.Demo.Ordering.Application.Orders.UpdateOrder
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(UpdateOrderCommand request, CancellationToken cancellationToken)
         {
-            var existingOrder = await _orderRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingOrder is null)
+            var order = await _orderRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (order is null)
             {
                 throw new NotFoundException($"Could not find Order '{request.Id}'");
             }
 
-            existingOrder.OrderDate = request.OrderDate;
-            existingOrder.CustomerId = request.CustomerId;
-            existingOrder.Status = request.Status;
+            order.OrderDate = request.OrderDate;
+            order.CustomerId = request.CustomerId;
+            order.Status = request.Status;
         }
     }
 }

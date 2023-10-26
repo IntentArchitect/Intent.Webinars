@@ -75,8 +75,8 @@
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
           <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
-          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association" />
-          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association" />
+          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
           <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
@@ -109,8 +109,8 @@
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
           <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
-          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association" />
-          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association" />
+          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
           <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
@@ -143,8 +143,8 @@
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
           <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
-          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association" />
-          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association" />
+          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
           <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
@@ -177,8 +177,8 @@
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
           <target id="d5ebb33a-9893-40b0-9fda-8207d1263c49" name="Order" type="element" specialization="Property" />
-          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association" />
-          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association" />
+          <target id="3a08e9fc-f180-4400-b293-233950620779" name="Customer" type="association" specialization="Association Target End" />
+          <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
           <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>

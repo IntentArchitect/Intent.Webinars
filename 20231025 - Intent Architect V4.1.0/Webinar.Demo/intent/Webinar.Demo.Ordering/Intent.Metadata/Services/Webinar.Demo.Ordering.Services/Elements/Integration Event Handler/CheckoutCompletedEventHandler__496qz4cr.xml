@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="7bc52d3e-ee0b-44d7-8f54-95234f49d558" type="Integration Event Handler" typeId="c0582230-22f5-4f74-8eb0-ec6fc9364900">
+  <name>CheckoutCompletedEventHandler</name>
+  <display>CheckoutCompletedEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>12aa98f7-412e-4188-937a-e92dbd15ce71</parentFolderId>
+  <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
+  <packageName>Webinar.Demo.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

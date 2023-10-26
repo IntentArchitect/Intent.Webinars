@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="45aa1f9d-5b0b-4b16-ba5a-0cedcff25acd">
   <sourceEnd id="bf757254-9ab2-4225-95db-04656419188d" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
-    <name>Webinar.Demo.Ordering</name>
     <display>publisher: Webinar.Demo.Ordering</display>
     <order>0</order>
     <typeReference id="4fdb4e78-a8e4-43e5-8409-dca13445ffdb">
@@ -20,7 +19,6 @@
     <childElements />
   </sourceEnd>
   <targetEnd id="45aa1f9d-5b0b-4b16-ba5a-0cedcff25acd" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
-    <name>OrderStartedEvent</name>
     <display>publish: OrderStartedEvent</display>
     <order>0</order>
     <typeReference id="5f505e6d-4c5b-4244-935a-eda98bc9082c">

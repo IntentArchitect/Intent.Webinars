@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="5bfeb7ad-066e-48d0-a8b6-aa489696a503">
   <sourceEnd id="d786a42f-92d8-448d-8fd8-a0811c7a8e71" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
-    <name>Cancel</name>
     <display>published by : Order.Cancel</display>
     <order>1</order>
     <typeReference id="0002dc80-342f-46c7-b123-6b7b6c5651ae">
@@ -20,7 +19,6 @@
     <childElements />
   </sourceEnd>
   <targetEnd id="5bfeb7ad-066e-48d0-a8b6-aa489696a503" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
-    <name>OrderCancelledDomainEvent</name>
     <display>publishes : OrderCancelledDomainEvent</display>
     <order>0</order>
     <typeReference id="3c8e959a-f284-410f-a69c-cb1bd61445a3">

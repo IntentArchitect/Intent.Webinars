@@ -16,6 +16,8 @@ namespace Webinar.Demo.Ordering.Application.Orders.CreateOrder
 
         private void ConfigureValidationRules()
         {
+            RuleFor(v => v.BasketLines)
+                .NotNull();
         }
     }
 }

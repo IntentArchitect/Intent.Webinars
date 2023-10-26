@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="83479a8e-adb5-445d-a40c-b87120400705">
+  <sourceEnd id="0bece534-5d1b-4384-b90b-5402707eafa2" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetCustomerByIdQuery</display>
+    <order>0</order>
+    <typeReference id="b346b5b4-546d-4b15-9af9-78feb7cf52d6">
+      <typeId>d06b964d-3806-4c4f-a058-c3950f6c66be</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="83479a8e-adb5-445d-a40c-b87120400705" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>customer</name>
+    <display>[query] customer: Customer</display>
+    <order>1</order>
+    <typeReference id="4db85520-a976-41ae-8627-d7c93831c4c0">
+      <typeId>3330cb5f-633f-453c-8f67-73879d0a6f89</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="d06b964d-3806-4c4f-a058-c3950f6c66be" location="GetCustomerByIdQuery" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="3330cb5f-633f-453c-8f67-73879d0a6f89" location="Customer" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="152a747a-f844-4426-abb3-0afe97409c95" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="d06b964d-3806-4c4f-a058-c3950f6c66be" name="GetCustomerByIdQuery" type="element" specialization="Query" />
+                  <target id="f1574929-7532-489d-b280-26b4443dfbb0" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

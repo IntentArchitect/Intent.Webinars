@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d68218ac-ede4-439b-8b7e-a7147f0c1e94">
+  <sourceEnd id="4cd03524-7f96-433e-99b7-362538aa4584" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : Customers.UpdateCustomerCommand</display>
+    <order>0</order>
+    <typeReference id="378841b2-7be8-4a4d-8bbd-71ec849d9286">
+      <typeId>e11e46a8-39b3-4d74-a8cc-75f1c5d1644c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d68218ac-ede4-439b-8b7e-a7147f0c1e94" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>customer</name>
+    <display>[update] customer: Customer</display>
+    <order>5</order>
+    <typeReference id="eb249c62-8e60-42f4-b789-a5f6c7b87e28">
+      <typeId>3330cb5f-633f-453c-8f67-73879d0a6f89</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" location="UpdateCustomerCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="3330cb5f-633f-453c-8f67-73879d0a6f89" location="Customer" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="152a747a-f844-4426-abb3-0afe97409c95" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="c215c65f-13c4-4629-aa0f-a14aef1fa6e9" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" location="UpdateCustomerCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="3330cb5f-633f-453c-8f67-73879d0a6f89" location="Customer" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Name}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="8603a016-80f7-40d3-af3d-af8d47f1c0a5" name="Name" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Name" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="80dfe800-d635-4f35-b35f-7df7c7770570" name="Name" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Surname}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="c5b8f49d-ea74-45cf-9791-eee756712b38" name="Surname" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Surname" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="c794031f-03f8-4e63-a99f-c77ede5bc558" name="Surname" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Email}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="c8ca3adc-c8b2-4e37-af6f-419ec3c13b9b" name="Email" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Email" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="730dba02-3166-4fd7-80e7-1d6d1410b43d" name="Email" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DeliveryAddress.Line1}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+              <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="DeliveryAddress.Line1" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="17810dfd-a83e-4c5e-8beb-a7edafb6d465" name="DeliveryAddress" type="element" specialization="DTO-Field" />
+                  <target id="f30fb29d-b417-4b4d-b941-bcb7f222c78a" name="Line1" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DeliveryAddress.Line2}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+              <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="DeliveryAddress.Line2" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="17810dfd-a83e-4c5e-8beb-a7edafb6d465" name="DeliveryAddress" type="element" specialization="DTO-Field" />
+                  <target id="93a7eec2-173e-4b5c-8a37-55ee4634358d" name="Line2" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DeliveryAddress.City}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+              <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="DeliveryAddress.City" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="17810dfd-a83e-4c5e-8beb-a7edafb6d465" name="DeliveryAddress" type="element" specialization="DTO-Field" />
+                  <target id="9d655903-9cfa-49c1-9b19-b8d4c765af64" name="City" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DeliveryAddress.Postal}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="1a968a1f-4fc3-41d9-aca6-ff5f168fe13a" name="DeliveryAddress" type="association" specialization="Association Target End" />
+              <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="DeliveryAddress.Postal" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="e11e46a8-39b3-4d74-a8cc-75f1c5d1644c" name="UpdateCustomerCommand" type="element" specialization="Command" />
+                  <target id="17810dfd-a83e-4c5e-8beb-a7edafb6d465" name="DeliveryAddress" type="element" specialization="DTO-Field" />
+                  <target id="27ffe3d8-d5fb-4257-b5ab-b911277fac04" name="Postal" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

@@ -73,7 +73,7 @@
         <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
         <autoSyncTypeReference>false</autoSyncTypeReference>
         <mappedPath>
-          <target id="f6d13496-4366-44b4-bc86-8e8604920c13" name="BasketLines" type="association" specialization="Association" />
+          <target id="f6d13496-4366-44b4-bc86-8e8604920c13" name="BasketLines" type="association" specialization="Association Target End" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>9b830fb3-1323-479e-897a-217458107981</parentFolderId>

@@ -26,15 +26,15 @@ namespace Webinar.Demo.Ordering.Application.Products.UpdateProduct
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(UpdateProductCommand request, CancellationToken cancellationToken)
         {
-            var existingProduct = await _productRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingProduct is null)
+            var product = await _productRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (product is null)
             {
                 throw new NotFoundException($"Could not find Product '{request.Id}'");
             }
 
-            existingProduct.Name = request.Name;
-            existingProduct.Description = request.Description;
-            existingProduct.Price = request.Price;
+            product.Name = request.Name;
+            product.Description = request.Description;
+            product.Price = request.Price;
         }
     }
 }

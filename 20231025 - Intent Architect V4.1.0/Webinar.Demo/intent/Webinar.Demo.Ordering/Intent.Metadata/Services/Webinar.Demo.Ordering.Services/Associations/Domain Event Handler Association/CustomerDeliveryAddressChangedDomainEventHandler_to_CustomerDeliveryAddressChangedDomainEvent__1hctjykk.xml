@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="affba515-545a-4dbb-9f1b-8de37bdc1efa">
+  <sourceEnd id="e999ecb4-5aa1-4919-86e8-7a45de432874" type="Domain Event Handler Association Source End" typeId="79f048d4-4c09-4405-be8f-95473a981556">
+    <display>: CustomerDeliveryAddressChangedDomainEventHandler</display>
+    <order>0</order>
+    <typeReference id="10d99c6a-0cac-4595-94c6-0a2847ac1ebe">
+      <typeId>8f38b763-6825-4e9e-bc87-5db41b90835d</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="affba515-545a-4dbb-9f1b-8de37bdc1efa" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
+    <display>handles : CustomerDeliveryAddressChangedDomainEvent</display>
+    <order>0</order>
+    <typeReference id="c440ac04-433d-4aeb-a7d4-06ac15b1e0c5">
+      <typeId>7ea5783b-63a4-4861-b647-cb4075d511c6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Handler Association</associationType>
+  <associationTypeId>90831494-f069-44eb-b488-ab2dba7518ea</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="36d9f985-edb6-4ad4-bd74-ddd467350216">
+  <sourceEnd id="c8cec72f-d668-4d33-992f-40e534a192f8" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : Customers.ChangeDeliveryAddressCustomerCommand</display>
+    <order>0</order>
+    <typeReference id="4533d462-2860-436f-b5c0-24d2640539ac">
+      <typeId>44a8de34-192b-4752-9534-4d7e163c160e</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="36d9f985-edb6-4ad4-bd74-ddd467350216" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>customer</name>
+    <display>[update] customer: ChangeDeliveryAddress</display>
+    <order>2</order>
+    <typeReference id="eac3a051-1007-4a44-b70d-ccc22fa4ead2">
+      <typeId>cc633a9f-d084-4b92-97aa-694b48f58e28</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="44a8de34-192b-4752-9534-4d7e163c160e" location="ChangeDeliveryAddressCustomerCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="3330cb5f-633f-453c-8f67-73879d0a6f89" location="Customer" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="152a747a-f844-4426-abb3-0afe97409c95" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                  <target id="34eff1bd-72b4-46f6-81a5-5ae88026347c" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="44a8de34-192b-4752-9534-4d7e163c160e" location="ChangeDeliveryAddressCustomerCommand" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="3330cb5f-633f-453c-8f67-73879d0a6f89" location="Customer" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{ChangeDeliveryAddressCustomerCommand}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="cc633a9f-d084-4b92-97aa-694b48f58e28" name="ChangeDeliveryAddress" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="ChangeDeliveryAddressCustomerCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Address.Line1}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="cc633a9f-d084-4b92-97aa-694b48f58e28" name="ChangeDeliveryAddress" type="element" specialization="Operation" />
+              <target id="4e19b786-3ea4-4655-8600-778dd1c935c9" name="address" type="element" specialization="Parameter" />
+              <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Address.Line1" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                  <target id="984a6c3f-72ed-4685-af16-0c94597e6460" name="Address" type="element" specialization="DTO-Field" />
+                  <target id="3430a86a-6808-45a5-bfbf-33ec486cc28b" name="Line1" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Address.Line2}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="cc633a9f-d084-4b92-97aa-694b48f58e28" name="ChangeDeliveryAddress" type="element" specialization="Operation" />
+              <target id="4e19b786-3ea4-4655-8600-778dd1c935c9" name="address" type="element" specialization="Parameter" />
+              <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Address.Line2" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                  <target id="984a6c3f-72ed-4685-af16-0c94597e6460" name="Address" type="element" specialization="DTO-Field" />
+                  <target id="a6b027a8-741c-4376-b0c0-ac434df2221f" name="Line2" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Address.City}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="cc633a9f-d084-4b92-97aa-694b48f58e28" name="ChangeDeliveryAddress" type="element" specialization="Operation" />
+              <target id="4e19b786-3ea4-4655-8600-778dd1c935c9" name="address" type="element" specialization="Parameter" />
+              <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Address.City" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                  <target id="984a6c3f-72ed-4685-af16-0c94597e6460" name="Address" type="element" specialization="DTO-Field" />
+                  <target id="880435c0-d254-44d9-a372-4ee8343e7dba" name="City" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Address.Postal}</expression>
+            <path>
+              <target id="3330cb5f-633f-453c-8f67-73879d0a6f89" name="Customer" type="element" specialization="Class" />
+              <target id="cc633a9f-d084-4b92-97aa-694b48f58e28" name="ChangeDeliveryAddress" type="element" specialization="Operation" />
+              <target id="4e19b786-3ea4-4655-8600-778dd1c935c9" name="address" type="element" specialization="Parameter" />
+              <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Address.Postal" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="44a8de34-192b-4752-9534-4d7e163c160e" name="ChangeDeliveryAddressCustomerCommand" type="element" specialization="Command" />
+                  <target id="984a6c3f-72ed-4685-af16-0c94597e6460" name="Address" type="element" specialization="DTO-Field" />
+                  <target id="fec613f8-d5ca-4600-9a20-daffd9d99c90" name="Postal" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

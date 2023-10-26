@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8ebf6420-87c7-4ff3-8eab-71541c26408f">
+  <sourceEnd id="56f41f63-abb9-4ea8-8c0e-0e8237a1efe4" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : OrderCreatedDomainEventHandler.</display>
+    <order>0</order>
+    <typeReference id="f03a8e21-b13a-46f4-98b6-202de17443e7">
+      <typeId>10909d15-d206-4bb6-ad3a-1b17448ca739</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8ebf6420-87c7-4ff3-8eab-71541c26408f" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>publish: OrderStartedEvent</display>
+    <order>0</order>
+    <typeReference id="6e853665-cc50-42a0-b947-a9608f27e4d6">
+      <typeId>423027fc-3509-4a28-89a8-d20bf773f758</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>acbc6ad0-90f2-49f5-9f1e-b6fcf2ce629a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="10909d15-d206-4bb6-ad3a-1b17448ca739" location="[Webinar.Demo.Ordering].[Services].[]" />
+        <target applicationId="baf22102-0897-4652-8223-daa438dded47" designerId="822e4254-9ced-4dd1-ad56-500b861f7e4d" elementId="423027fc-3509-4a28-89a8-d20bf773f758" location="[Webinar.Demo.Ordering].[Eventing].[OrderStartedEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Order.Id}</expression>
+            <path>
+              <target id="423027fc-3509-4a28-89a8-d20bf773f758" name="OrderStartedEvent" type="element" specialization="Message" />
+              <target id="07177fef-140a-4b47-88c3-4871d21480da" name="Id" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.Id" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="10909d15-d206-4bb6-ad3a-1b17448ca739" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="703905f1-2bc4-4ec5-a62b-7dc0c8945549" name="Order" type="element" specialization="Property" />
+                  <target id="1d08a204-5f72-4da6-9f7a-72cc1c2a23d6" name="Id" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.OrderDate}</expression>
+            <path>
+              <target id="423027fc-3509-4a28-89a8-d20bf773f758" name="OrderStartedEvent" type="element" specialization="Message" />
+              <target id="4beead31-e0e6-402a-a37a-27657a051042" name="OrderDate" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.OrderDate" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="10909d15-d206-4bb6-ad3a-1b17448ca739" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="703905f1-2bc4-4ec5-a62b-7dc0c8945549" name="Order" type="element" specialization="Property" />
+                  <target id="2577902c-fee9-46d4-8292-519651c8e4c7" name="OrderDate" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.CustomerId}</expression>
+            <path>
+              <target id="423027fc-3509-4a28-89a8-d20bf773f758" name="OrderStartedEvent" type="element" specialization="Message" />
+              <target id="94b53c40-2f76-40e9-8dcf-f6ff045fad11" name="CustomerId" type="element" specialization="Property" />
+            </path>
+            <sources>
+              <source identifier="Order.CustomerId" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="10909d15-d206-4bb6-ad3a-1b17448ca739" name="" type="association" specialization="Domain Event Handler Association Target End" />
+                  <target id="703905f1-2bc4-4ec5-a62b-7dc0c8945549" name="Order" type="element" specialization="Property" />
+                  <target id="2db8eaff-8c4e-46fc-ba0d-8e0e5dfdfa9d" name="CustomerId" type="element" specialization="Attribute" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

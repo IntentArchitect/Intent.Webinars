@@ -26,13 +26,13 @@ namespace Webinar.Demo.Ordering.Application.Orders.ShipOrder
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task Handle(ShipOrderCommand request, CancellationToken cancellationToken)
         {
-            var existingOrder = await _orderRepository.FindByIdAsync(request.Id, cancellationToken);
-            if (existingOrder is null)
+            var order = await _orderRepository.FindByIdAsync(request.Id, cancellationToken);
+            if (order is null)
             {
                 throw new NotFoundException($"Could not find Order '{request.Id}'");
             }
 
-            existingOrder.Ship();
+            order.Ship();
         }
     }
 }

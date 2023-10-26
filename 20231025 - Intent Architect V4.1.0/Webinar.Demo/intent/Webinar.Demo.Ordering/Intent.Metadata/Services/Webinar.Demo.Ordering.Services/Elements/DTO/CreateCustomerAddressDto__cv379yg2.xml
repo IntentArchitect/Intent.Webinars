@@ -5,16 +5,7 @@
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
-  <isMapped>true</isMapped>
-  <mappedClass>
-    <applicationId>baf22102-0897-4652-8223-daa438dded47</applicationId>
-    <metadataId>6ab29b31-27af-4f56-a67c-986d82097d63</metadataId>
-    <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-    <autoSyncTypeReference>true</autoSyncTypeReference>
-    <mappedPath>
-      <target id="0451f3bb-aa2a-423a-abc7-3ff9322a8289" name="Address" type="element" specialization="Value Object" />
-    </mappedPath>
-  </mappedClass>
+  <isMapped>false</isMapped>
   <parentFolderId>58abd0be-cab1-4987-9f9b-63d776719539</parentFolderId>
   <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
   <packageName>Webinar.Demo.Ordering.Services</packageName>
@@ -40,14 +31,7 @@
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
-      <isMapped>true</isMapped>
-      <mappedClass>
-        <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
-        <mappedPath>
-          <target id="d57d5e27-b5ac-47c2-a6f0-0397cf3a39c1" name="Line1" type="element" specialization="Attribute" />
-        </mappedPath>
-      </mappedClass>
+      <isMapped>false</isMapped>
       <parentFolderId>434058ab-9ff4-4213-af72-ac3ecf9f518f</parentFolderId>
       <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
       <packageName>Webinar.Demo.Ordering.Services</packageName>
@@ -91,14 +75,7 @@
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
-      <isMapped>true</isMapped>
-      <mappedClass>
-        <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
-        <mappedPath>
-          <target id="5a207ea6-a5f6-4d45-b28b-5dc0a65c580c" name="Line2" type="element" specialization="Attribute" />
-        </mappedPath>
-      </mappedClass>
+      <isMapped>false</isMapped>
       <parentFolderId>434058ab-9ff4-4213-af72-ac3ecf9f518f</parentFolderId>
       <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
       <packageName>Webinar.Demo.Ordering.Services</packageName>
@@ -142,14 +119,7 @@
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
-      <isMapped>true</isMapped>
-      <mappedClass>
-        <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
-        <mappedPath>
-          <target id="54fca3e9-381e-4ca1-90cf-2979bf560a6c" name="City" type="element" specialization="Attribute" />
-        </mappedPath>
-      </mappedClass>
+      <isMapped>false</isMapped>
       <parentFolderId>434058ab-9ff4-4213-af72-ac3ecf9f518f</parentFolderId>
       <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
       <packageName>Webinar.Demo.Ordering.Services</packageName>
@@ -193,14 +163,7 @@
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
-      <isMapped>true</isMapped>
-      <mappedClass>
-        <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
-        <mappedPath>
-          <target id="2a750922-18ee-4914-8f0a-9d1e43f5a05e" name="Postal" type="element" specialization="Attribute" />
-        </mappedPath>
-      </mappedClass>
+      <isMapped>false</isMapped>
       <parentFolderId>434058ab-9ff4-4213-af72-ac3ecf9f518f</parentFolderId>
       <packageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</packageId>
       <packageName>Webinar.Demo.Ordering.Services</packageName>

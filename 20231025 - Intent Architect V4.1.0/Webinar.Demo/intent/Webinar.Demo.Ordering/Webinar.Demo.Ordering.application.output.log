@@ -118,8 +118,8 @@
       <ProjectId>b972ebf5-fb18-4df3-a3f6-6f775b27a690</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.LaunchSettings#b972ebf5-fb18-4df3-a3f6-6f775b27a690</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Api/Properties/launchsettings.json</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Properties/launchsettings.json</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Api/Properties/launchSettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Properties/launchSettings.json</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -564,42 +564,42 @@
     </FileLog>
     <FileLog>
       <ProjectId>ae16a71a-f692-4ea6-a424-4b6fcca1239f</ProjectId>
-      <CorrelationId>Intent.MediatR.DomainEvents.DefaultDomainEventHandler#7ea5783b-63a4-4861-b647-cb4075d511c6</CorrelationId>
+      <CorrelationId>Intent.MediatR.DomainEvents.DomainEventHandler#8f38b763-6825-4e9e-bc87-5db41b90835d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/CustomerDeliveryAddressChangedDomainEventHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>CustomerDeliveryAddressChangedDomainEventHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/Customers/CustomerDeliveryAddressChangedDomainEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Customers/CustomerDeliveryAddressChangedDomainEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>ae16a71a-f692-4ea6-a424-4b6fcca1239f</ProjectId>
-      <CorrelationId>Intent.MediatR.DomainEvents.DefaultDomainEventHandler#454a2191-d161-4aaf-b4c0-be367952e21d</CorrelationId>
+      <CorrelationId>Intent.MediatR.DomainEvents.DomainEventHandler#a2bb3368-1397-47c0-af31-7a9f39dbc83f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/OrderCancelledDomainEventHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>OrderCancelledDomainEventHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/Orders/OrderCancelledDomainEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderCancelledDomainEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>ae16a71a-f692-4ea6-a424-4b6fcca1239f</ProjectId>
-      <CorrelationId>Intent.MediatR.DomainEvents.DefaultDomainEventHandler#7b6b9824-c04a-4505-82b6-04eb73fa6038</CorrelationId>
+      <CorrelationId>Intent.MediatR.DomainEvents.DomainEventHandler#a970e36f-b159-4d0b-89ab-2f1bab149923</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/OrderCreatedDomainEventHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>OrderCreatedDomainEventHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/Orders/OrderCreatedDomainEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderCreatedDomainEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>ae16a71a-f692-4ea6-a424-4b6fcca1239f</ProjectId>
-      <CorrelationId>Intent.MediatR.DomainEvents.DefaultDomainEventHandler#199994b8-84cf-47c7-82ee-cb4ed0ce37b3</CorrelationId>
+      <CorrelationId>Intent.MediatR.DomainEvents.DomainEventHandler#09eb9b50-38e0-4eb1-978b-e802a349df6e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/OrderPaidDomainEventHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>OrderPaidDomainEventHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/Orders/OrderPaidDomainEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderPaidDomainEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>ae16a71a-f692-4ea6-a424-4b6fcca1239f</ProjectId>
-      <CorrelationId>Intent.MediatR.DomainEvents.DefaultDomainEventHandler#c4abc490-0913-4811-9c95-0b02761a7584</CorrelationId>
+      <CorrelationId>Intent.MediatR.DomainEvents.DomainEventHandler#611fe7ef-ac49-430a-8476-4c43a08ae431</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/OrderShipedDomainEventHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>OrderShipedDomainEventHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/EventHandlers/Orders/OrderShipedDomainEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderShipedDomainEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -640,6 +640,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/IntegrationEvents/CustomerDeliveryAddressChangedEventExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CustomerDeliveryAddressChangedEventExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>c603da2e-a200-4254-a8e7-8441266a7c12</ProjectId>
+      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#7bc52d3e-ee0b-44d7-8f54-95234f49d558</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/IntegrationEvents/EventHandlers/Orders/CheckoutCompletedEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/CheckoutCompletedEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -776,6 +784,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/Orders/CreateOrder/CreateOrderCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Orders/CreateOrder/CreateOrderCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2dcebbd2-b269-4d45-85f3-859510276977</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#1a3a5047-295c-43b2-8fa5-7d253b0669ca</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Webinar.Demo.Ordering/Webinar.Demo.Ordering.Application/Orders/CreateOrderCommandBasketLinesDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/CreateOrderCommandBasketLinesDto.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

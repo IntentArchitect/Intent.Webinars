@@ -22,7 +22,7 @@
   <targetEnd id="5e1cb422-bda9-4e8e-9866-3ea66b6fe384" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>BillingAddress</name>
     <display>BillingAddress: Address?   [1 --&gt; 0..1]</display>
-    <order>5</order>
+    <order>6</order>
     <typeReference id="dba62f99-a139-4136-b4ba-6323a0671549">
       <typeId>0451f3bb-aa2a-423a-abc7-3ff9322a8289</typeId>
       <isNavigable>true</isNavigable>

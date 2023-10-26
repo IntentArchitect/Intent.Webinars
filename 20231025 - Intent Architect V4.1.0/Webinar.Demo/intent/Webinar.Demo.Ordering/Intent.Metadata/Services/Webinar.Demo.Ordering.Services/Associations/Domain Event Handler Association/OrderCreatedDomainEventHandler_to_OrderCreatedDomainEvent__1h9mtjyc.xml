@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="10909d15-d206-4bb6-ad3a-1b17448ca739">
+  <sourceEnd id="ae97ce4a-7115-4074-a211-21b8012d2721" type="Domain Event Handler Association Source End" typeId="79f048d4-4c09-4405-be8f-95473a981556">
+    <display>: OrderCreatedDomainEventHandler</display>
+    <order>0</order>
+    <typeReference id="28a30cdf-4271-4557-9d80-2777ba0a4e7c">
+      <typeId>a970e36f-b159-4d0b-89ab-2f1bab149923</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Services</typePackageName>
+      <typePackageId>0441d61f-9a25-4139-bfb5-c3bf54298de6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="10909d15-d206-4bb6-ad3a-1b17448ca739" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
+    <display>handles : OrderCreatedDomainEvent</display>
+    <order>0</order>
+    <typeReference id="c2380a46-ba5a-473e-8c60-f04223ab7074">
+      <typeId>7b6b9824-c04a-4505-82b6-04eb73fa6038</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Webinar.Demo.Ordering.Domain</typePackageName>
+      <typePackageId>27a5d5f7-625e-4c13-9201-68a826ba4f6d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Handler Association</associationType>
+  <associationTypeId>90831494-f069-44eb-b488-ab2dba7518ea</associationTypeId>
+  <stereotypes />
+</association>

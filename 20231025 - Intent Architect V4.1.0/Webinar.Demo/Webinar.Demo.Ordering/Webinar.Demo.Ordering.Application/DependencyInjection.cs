@@ -10,6 +10,7 @@ using Webinar.Demo.Ordering.Application.Common.Behaviours;
 using Webinar.Demo.Ordering.Application.Common.Eventing;
 using Webinar.Demo.Ordering.Application.Common.Validation;
 using Webinar.Demo.Ordering.Application.IntegrationEventHandlers;
+using Webinar.Demo.Ordering.Application.IntegrationEvents.EventHandlers.Orders;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.DependencyInjection.DependencyInjection", Version = "1.0")]
@@ -34,7 +35,8 @@ namespace Webinar.Demo.Ordering.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IValidatorProvider, ValidatorProvider>();
             services.AddTransient<IValidationService, ValidationService>();
-            services.AddTransient<IIntegrationEventHandler<CheckoutCompletedEvent>, CheckoutCompletedEventHandler>();
+            services.AddTransient<IIntegrationEventHandler<CheckoutCompletedEvent>, IntegrationEvents.EventHandlers.Orders.CheckoutCompletedEventHandler>();
+            services.AddTransient<IIntegrationEventHandler<CheckoutCompletedEvent>, IntegrationEventHandlers.CheckoutCompletedEventHandler>();
             return services;
         }
     }
